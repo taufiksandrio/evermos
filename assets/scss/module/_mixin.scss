@@ -1,0 +1,18 @@
+@mixin dislay-flex($direction: row, $justify: unset, $padding: 0, $align: unset) {
+    display: flex;
+    flex-direction: $direction;
+    padding: $padding;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin border-radius($radius:0) {
+    border-radius: $radius;
+}
+@mixin respond($breakpoint) {
+    @if($breakpoint == medium)  {
+      @media (min-width: 768px) and (max-width: 992px) { @content }
+    }
+    @if($breakpoint == small)  {
+      @media (max-width: 600px) { @content }
+    }
+}
