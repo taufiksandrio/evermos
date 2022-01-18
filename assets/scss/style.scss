@@ -29,7 +29,8 @@ input:focus{
         .nav-search{
             @include border-radius($radius: 20px);
             height: 40px;
-            min-width: 100%;
+            width: 100%;
+            max-width: 100%;
             border: $border-grey;
             padding: 10px;
             font-size: 0.9em;
